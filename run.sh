@@ -1,5 +1,7 @@
 #!/bin/bash
-git clone https://github.com/bstee615/mnist-test /tmp/mnist-test
-cd /tmp/mnist-test
+tmpdir=$(mktemp -d)
+git clone https://github.com/bstee615/mnist-test $tmpdir
+cd $tmpdir
 pip install torch torchvision
 python mnist.py
+rm -r $tmpdir
