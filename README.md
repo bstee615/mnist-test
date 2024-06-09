@@ -1,6 +1,6 @@
 # MNIST test script
 
-A simple MNIST classifier meant to test CUDA/PyTorch setup on a new machine.
+A simple script which trains a MNIST classifier to test CUDA/PyTorch setup on a new machine.
 
 Run with the following:
 
