@@ -101,6 +101,7 @@ def main():
 
     torch.manual_seed(args.seed)
 
+    print("CUDA:", torch.cuda.is_available())
     if use_cuda:
         device = torch.device("cuda")
     elif use_mps:
